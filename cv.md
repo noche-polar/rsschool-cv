@@ -15,10 +15,8 @@ I haven't had the experience in commercial developing yet, but I'm always strive
 * Sass
 
 #### 💻 How I code:
-<details><summary>HTML</summary>
-  
-```html
 
+```html
 <section class="pump-composit">
   <h2 class="pump-composit__h2">
     Из чего состоит инсулиновая помпа?
@@ -52,11 +50,8 @@ I haven't had the experience in commercial developing yet, but I'm always strive
     </li>
   </ul>
 </section>
-
 ```
-</details>
-<details><summary>CSS</summary>
-  
+
 ```css
 .pump-composit {
     position: relative;
@@ -165,8 +160,6 @@ I haven't had the experience in commercial developing yet, but I'm always strive
     }
 }
 ```
-</details>
-<details><summary>JS</summary>
   
 ```js
 var navMenu = document.querySelector('.nav__menu');
@@ -188,8 +181,6 @@ navMenuButtonOpen.addEventListener("click", function (evt) {
     }
 })
 ```
-</details>
-
 
 #### 📚 Experience & education:  
 HTML Academy courses and self-education
