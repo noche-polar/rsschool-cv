@@ -18,6 +18,7 @@ I haven't had the experience in commercial developing yet, but I'm always strive
 <details><summary>HTML</summary>
   
 ```html
+
 <section class="pump-composit">
   <h2 class="pump-composit__h2">
     Из чего состоит инсулиновая помпа?
@@ -51,6 +52,7 @@ I haven't had the experience in commercial developing yet, but I'm always strive
     </li>
   </ul>
 </section>
+
 ```
 </details>
 <details><summary>CSS</summary>
