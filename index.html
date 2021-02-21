@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kastsiuchyk Alena's CV</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">
+            Kastsiuchyk Alena's CV
+        </h1>
+    </header>
+    <main class="main">
+        <img class="my_photo" src="/Users/elenakastucik/oiseau-mecanique/study/RSSchool/rsschool-cv/my_portrait.jpeg" alt="there's my photo here" height="300px">
+        <section class="main__location">
+            📍 Minsk, Belarus
+        </section>
+        <section class="main__contacts">
+            <p>Tel.: + 375 29 141 17 51</p>
+            <p>E-mail: kastiuchik.elena@gmail.com</p>
+        </section>
+        <section class="main__about-me">
+            <h2 class="main__about-me-h2">
+                🤓 About me
+            </h2>
+            I haven't had the experience in commercial developing yet, but I'm always strive to discover and learn new things in front-end development. That's why I would like to attend the Rolling Scopes School courses.
+        </section>
+        <section class="main__skills">
+            <h2 class="main__skills-h2">
+                🔧 Skills
+            </h2>
+            <ul class="main__skills-list">
+                <li class="main__skills-list-item">
+                    HTML
+                </li>
+                <li class="main__skills-list-item">
+                    CSS
+                </li>
+                <li class="main__skills-list-item">
+                    JS (basic)
+                </li>
+                <li class="main__skills-list-item">
+                    Gulp
+                </li>
+                <li class="main__skills-list-item">
+                    Sass
+                </li>
+            </ul>
+        </section>
+        <section class="main__coding">
+            <h2 class="main__coding-h2">
+                💻 How I code
+            </h2>
+            <ul class="main__coding-list">
+                <li class="main__coding-list-item">
+                    <details>
+                        <summary>HTML</summary>
+                        <pre><code>
+                            &lt;section class="pump-composit"&gt;
+                                &lt;h2 class="pump-composit__h2"&gt;
+                                  Из чего состоит инсулиновая помпа?
+                                &lt;/h2&gt;
+                                &lt;img class="pump-composit__pump-scheme" src="../img/pump_composit.png" alt="Схема инсулиновой помпы" height="350px"&gt;
+                                &lt;ul class="pump-composit__list"&gt;
+                                    &lt;li class="pump-composit__list-item pump-composit__list-item--col-left"&gt;
+                                    &lt;span class="pump-composit__list-item-title"&gt;
+                                      1. Инсулиновая помпа
+                                    &lt;/span&gt;
+                                    Небольшое электронное устройство с ЖК-экраном, кнопками для программирования и отсеком для батарейки
+                                  &lt;/li&gt;
+                                  &lt;li class="pump-composit__list-item pump-composit__list-item--col-left"&gt;
+                                    &lt;span class="pump-composit__list-item-title"&gt;
+                                      2. Резервуар
+                                    &lt;/span&gt;
+                                    Пластиковый картридж для инсулина, который вводится в специальный отсек инсулиновой помпы.
+                                  &lt;/li&gt;
+                                  &lt;li class="pump-composit__list-item pump-composit__list-item--col-right"&gt;
+                                    &lt;span class="pump-composit__list-item-title"&gt;
+                                      3. Инфузионный набор
+                                    &lt;/span&gt;
+                                    Состоит из тонкой трубочки и инфузионного катетера.
+                                    Из резервуара инсулин по трубке поступает в катетер (канюлю), расположенную под кожей. Трубочку можно отсоединять от катетера по мере необходимости (например, во время плавания, душа или занятий спортом).
+                                  &lt;/li&gt;
+                                  &lt;li class="pump-composit__list-item pump-composit__list-item--col-right"&gt;
+                                    &lt;span class="pump-composit__list-item-title"&gt;
+                                      4. Трансмиттер
+                                    &lt;/span&gt;
+                                    Дополнительное устройство для использования функции непрерывного мониторинга глюкозы (НМГ)
+                                  &lt;/li&gt;
+                                &lt;/ul&gt;
+                              &lt;/section&gt;
+                        </code></pre>
+                    </details>
+                </li>
+                <li class="main__coding-list-item">
+                    <details>
+                        <summary>CSS</summary>
+                        <pre><code>
+                            .pump-composit {
+                                position: relative;
+                            
+                                background-color: #1C85C7;
+                            
+                                padding: 41px 15px 36px 16px;
+                            }
+                            
+                            .pump-composit__h2 {
+                                color: #ffffff;
+                            
+                                font-size: 25px;
+                                line-height: 30px;
+                                text-transform: uppercase;
+                                text-align: center;
+                            
+                                margin-bottom: 45px;
+                            }
+                            
+                            .pump-composit__pump-scheme {
+                                display: block;
+                                margin: 0 auto 28px;
+                            }
+                            
+                            .pump-composit__list {
+                                text-align: center;
+                            }
+                            
+                            .pump-composit__list-item {
+                                color: #ffffff;
+                            
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                            
+                            .pump-composit__list-item:not(:last-child) {
+                                margin-bottom: 31px;
+                            }
+                            
+                            .pump-composit__list-item-title {
+                                display: block;
+                                color: #F7A800;
+                            
+                                font-family: 'Montserrat';
+                                font-size: 20px;
+                                line-height: 24px;
+                                font-weight: 700;
+                            
+                                margin-bottom: 10px;
+                            }
+                            
+                            @media (min-width: 1400px) {
+                                .pump-composit {
+                                    padding: 63px 45px 82px;
+                                }
+                            
+                                .pump-composit__h2 {
+                                    font-size: 32px;
+                                    line-height: 38px;
+                            
+                                    margin-bottom: 75px;
+                                }
+                            
+                                .pump-composit__pump-scheme {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -38%);
+                            
+                                    height: 375px;
+                                    margin-bottom: 0;
+                                }
+                            
+                                .pump-composit__list {
+                                    display: flex;
+                                    flex-direction: column;
+                                    flex-wrap: wrap;
+                                    height: 375px;
+                                    justify-content: space-around;
+                                }
+                            
+                                .pump-composit__list-item--col-left {
+                                    align-self: flex-start;
+                                    text-align: right;
+                                }
+                            
+                                .pump-composit__list-item--col-right {
+                                    align-self: flex-end;
+                                    text-align: left;
+                                }
+                                
+                                .pump-composit__list-item-title {
+                                    font-size: 24px;
+                                    line-height: 29px;
+                                }
+                            
+                                .pump-composit__list-item {
+                                    max-width: 370px;
+                                    font-size: 18px;
+                                    line-height: 25px;
+                                }
+                            
+                                .pump-composit__list-item:not(:last-child) {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        </code></pre>
+                    </details>
+                </li>
+                <li class="main__coding-list-item">
+                    <details>
+                        <summary>JS</summary>
+                        <pre><code>
+                            var navMenu = document.querySelector('.nav__menu');
+                            var navMenuButtonOpen = document.querySelector('.nav__menu-button--open');
+                            var navMenuButtonClose = document.querySelector('.nav__menu-button--close');
+                            
+                            navMenuButtonOpen.addEventListener("click", function (evt) {
+                                evt.preventDefault();
+                                if (! navMenuButtonOpen.classList.contains("nav__menu-button--close")) {
+                                    navMenuButtonOpen.classList.add("nav__menu-button--close");
+                                } else {
+                                    navMenuButtonOpen.classList.remove("nav__menu-button--close");
+                                }
+
+                                if (navMenu.classList.contains("nav__menu--disabled")) {
+                                    navMenu.classList.remove("nav__menu--disabled");
+                                } else {
+                                    navMenu.classList.add("nav__menu--disabled");
+                                }
+                            })
+                        </code></pre>
+                    </details>
+                </li>
+            </ul>
+        </section>
+        <section class="main__experience-and-education">
+            <h2 class="main__experience-and-education-h2">
+                📚  Experience & education
+            </h2>
+            HTML Academy courses and self-education
+        </section>
+        <section class="main__english-level">
+            <h2 class="main__english-level-h2">
+                🇬🇧🇺🇸  English
+            </h2>
+            B1-B2 (self-education, I worked as a guide in museum with excursions in English as an option)
+        </section>
+    </main>
+</body>
+</html>
