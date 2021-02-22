@@ -1,6 +1,4 @@
-body {
-  margin: 0;
-}
+body { margin: 0; }
 
 .header, 
 .main {
@@ -12,31 +10,25 @@ body {
   background-color: #fff4d9;
 }
 
-.main {
-  font-family: "Montserrat", sans-serif;
+@media (min-width: 1441px) {
+  .main { height: 100vh; }
 }
+
+.main { font-family: "Montserrat", sans-serif; }
 
 .header__h1,
-[class$="h2"] {
-  font-family: "Roboto Slab", serif;
-}
+[class$="h2"] { font-family: "Roboto Slab", serif; }
 
-h1 {
+.header__h1 {
   margin: 0;
   font-size: 30px;
 }
 
-h2 {
-  font-size: 22px;
-}
+[class$="h2"] { font-size: 22px; }
 
-.main__essential-info-wrapper {
-  display: flex;
-}
+.main__essential-info-wrapper { display: flex; }
 
-.main__contacts {
-  align-self: center;
-}
+.main__contacts { align-self: center; }
 
 .my_photo {
   margin-right: 20px;
@@ -45,16 +37,6 @@ h2 {
   border: 2px dotted grey;
 }
 
-h2 + p {
-  margin: 15px;
-}
+h2 + p { margin: 15px; }
 
-.main__coding-list {
-  list-style: none;
-}
-
-@media (min-width: 1441px) {
-  .main {
-    height: 100vh;
-  }
-}
+.main__coding-list { list-style: none; }
