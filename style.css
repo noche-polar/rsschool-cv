@@ -1,7 +1,9 @@
-body { margin: 0; }
+body { 
+  margin: 0; 
+  font-family: "Montserrat", sans-serif; 
+}
 
-.header, 
-.main {
+.page-center-wrapper {
   width: 80%;
   max-width: 1440px;
   padding: 15px 25px;
@@ -10,14 +12,8 @@ body { margin: 0; }
   background-color: #fff4d9;
 }
 
-@media (min-width: 1441px) {
-  .main { height: 100vh; }
-}
-
-.main { font-family: "Montserrat", sans-serif; }
-
 .header__h1,
-[class$="h2"] { font-family: "Roboto Slab", serif; }
+.h2 { font-family: "Roboto Slab", serif; }
 
 .header__h1 {
   margin: 0;
@@ -26,9 +22,15 @@ body { margin: 0; }
 
 [class$="h2"] { font-size: 22px; }
 
+@media (min-width: 1441px) {
+  .main { height: 100vh; }
+}
+
 .main__essential-info-wrapper { display: flex; }
 
 .main__contacts { align-self: center; }
+
+.main__contacts-list { padding: 0; }
 
 .my_photo {
   margin-right: 20px;
@@ -39,4 +41,18 @@ body { margin: 0; }
 
 h2 + p { margin: 15px; }
 
-.main__coding-list { list-style: none; }
+.main__coding-list,
+.main__contacts-list { list-style: none; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  font-size: 12px;
+}
+
+.footer__svg-logo {
+  padding-left: 5px;
+  padding-right: 5px;
+}
