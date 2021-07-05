@@ -162,24 +162,22 @@ I haven't had the experience in commercial developing yet, but I'm always strive
 ```
   
 ```js
-var navMenu = document.querySelector('.nav__menu');
-var navMenuButtonOpen = document.querySelector('.nav__menu-button--open');
-var navMenuButtonClose = document.querySelector('.nav__menu-button--close');
-
-navMenuButtonOpen.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    if (! navMenuButtonOpen.classList.contains("nav__menu-button--close")) {
-        navMenuButtonOpen.classList.add("nav__menu-button--close");
-    } else {
-        navMenuButtonOpen.classList.remove("nav__menu-button--close");
+function distinct(a) {
+  if (a.length == 1) {return a};
+  
+  for (let i = a.length - 1; i >= 0; i--) {
+    let num = a[i]; 
+    a.splice(i, 1); 
+    
+    let count = 0;
+    for (let j = a.length - 1; j >= 0; j--) {
+      if (a.includes(num)) {count++;}
     }
-
-    if (navMenu.classList.contains("nav__menu--disabled")) {
-        navMenu.classList.remove("nav__menu--disabled");
-    } else {
-        navMenu.classList.add("nav__menu--disabled");
-    }
-})
+    if (count == 0) {a.push(num);}
+  }
+  
+  return a.reverse();
+}
 ```
 
 #### 📚 Experience & education:  
